@@ -284,9 +284,9 @@ class MirrorLeechListener:
             slmsg += f"Added by: {self.tag} | <code>{self.user_id}</code>\n\n"
         if LINK_LOGS:
             try:
-                upper = f"   ⊱✤┅┅┅●( 𝓬𝓵𝓸𝓾𝓭 𝓼𝓽𝓪𝓽𝓲𝓸𝓷 )●┅┅┅✤⊰\n"
+                upper = f"   ⊱✤┅┅┅●( 𝓐𝓶𝓻𝓸𝓫𝓸𝓽𝓼 𝓢𝓮𝓻𝓿𝓮𝓻 𓊇 )●┅┅┅✤⊰\n"
                 source_link = f"<code>{message_args[1]}</code>\n"
-                lower = f"   ⊱✤┅┅┅●( 𝓬𝓵𝓸𝓾𝓭 𝓼𝓽𝓪𝓽𝓲𝓸𝓷 )●┅┅┅✤⊰\n"
+                lower = f"   ⊱✤┅┅┅●( 𝓐𝓶𝓻𝓸𝓫𝓸𝓽𝓼 𝓢𝓮𝓻𝓿𝓮𝓻 𓊇 )●┅┅┅✤⊰\n"
                 for link_log in LINK_LOGS:
                     bot.sendMessage(link_log, text=slmsg + upper + source_link + lower, parse_mode=ParseMode.HTML )
             except IndexError:
@@ -295,9 +295,9 @@ class MirrorLeechListener:
                 try:
                     reply_text = reply_to.text
                     if is_url(reply_text):
-                        upper = f"   ⊱✤┅┅┅●( 𝓬𝓵𝓸𝓾𝓭 𝓼𝓽𝓪𝓽𝓲𝓸𝓷 )●┅┅┅✤⊰\n"
+                        upper = f"   ⊱✤┅┅┅●( 𝓐𝓶𝓻𝓸𝓫𝓸𝓽𝓼 𝓢𝓮𝓻𝓿𝓮𝓻 𓊇 )●┅┅┅✤⊰\n"
                         source_link = f"<code>{reply_text.strip()}</code>\n"
-                        lower = f"   ⊱✤┅┅┅●( 𝓬𝓵𝓸𝓾𝓭 𝓼𝓽𝓪𝓽𝓲𝓸𝓷 )●┅┅┅✤⊰\n"
+                        lower = f"   ⊱✤┅┅┅●( 𝓐𝓶𝓻𝓸𝓫𝓸𝓽𝓼 𝓢𝓮𝓻𝓿𝓮𝓻 𓊇 )●┅┅┅✤⊰\n"
                         for link_log in LINK_LOGS:
                             bot.sendMessage(chat_id=link_log, text=slmsg + upper + source_link + lower, parse_mode=ParseMode.HTML )
                 except TypeError:
@@ -352,8 +352,8 @@ class MirrorLeechListener:
                 msg = f"<b>⇛ Name • </b><{NAME_FONT}>{file_}</{NAME_FONT}>\n"
             else:
                 msg = f"<b>⇛ Name • </b><{NAME_FONT}>{file_}</{NAME_FONT}>\n"
-            botpm = f"<b>\n🌺 है {self.tag} आपका फाइल कंप्लीट</b>\n"
-            botpm += f"<b>\n💍 प्यार उससे करो जो आपको प्यार करता है</b>\n"
+            botpm = f"<b>\n🌺 है {self.tag} Your File Is Redy</b>\n"
+            botpm += f"<b>\n💍 Visit Again For Leechig</b>\n"
             buttons = ButtonMaker()
             b_uname = bot.get_me().username
             botstart = f"http://t.me/{b_uname}"
@@ -373,7 +373,7 @@ class MirrorLeechListener:
                 reply_to.delete()
 
         if EMOJI_THEME is True:
-            msg = f"<b>💍 Powered By 𝓬𝓵𝓸𝓾𝓭 𝓼𝓽𝓪𝓽𝓲𝓸𝓷</b>\n\n"
+            msg = f"<b>💍 Powered By 𝓐𝓶𝓻𝓸𝓫𝓸𝓽𝓼 𝓢𝓮𝓻𝓿𝓮𝓻</b>\n\n"
             msg += f"<b>⇛ Name • </b><{NAME_FONT}>{file_}</{NAME_FONT}>\n<b>⇛ Size • </b>{size}"
         else:
             msg = f"<b>╭ Name: </b><{NAME_FONT}>{file_}</{NAME_FONT}>\n<b>├ Size: </b>{size}"

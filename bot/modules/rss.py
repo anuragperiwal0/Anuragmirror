@@ -39,7 +39,7 @@ def rss_get(update, context):
                     item_info += f"<b>❄️ नाम ⇛ </b><code>{rss_d.entries[item_num]['title'].replace('>', '').replace('<', '')}</code>\n"
                     item_info += f"<b>❄️ लिंक ⇛ </b><code>{link}</code>\n"
                     item_info += f"<b> </b>\n"
-                    item_info += f"<b>⇛ Join 🔗 @Opleech_updates_v1</b>\n\n"
+                    item_info += f"<b>⇛ Join 🔗 @sources_cods</b>\n\n"
                 editMessage(item_info, msg)
             except IndexError as e:
                 LOGGER.error(str(e))
@@ -229,7 +229,7 @@ def rss_monitor(context):
                     feed_msg = f"<b>❄️ नाम ⇛ </b><code>{rss_d.entries[feed_count]['title'].replace('>', '').replace('<', '')}</code>\n\n"
                     feed_msg += f"<b>❄️ लिंक ⇛ </b><code>{url}</code>"
                     feed_msg += f"<b> </b>"
-                    feed_msg += f"<b>⇛ Join 🔗 @Opleech_updates_v1</b>"
+                    feed_msg += f"<b>⇛ Join 🔗 @sources_cods</b>"
                 sendRss(feed_msg, context.bot)
                 feed_count += 1
                 sleep(5)

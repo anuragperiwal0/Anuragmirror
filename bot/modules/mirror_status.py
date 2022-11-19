@@ -18,7 +18,7 @@ def mirror_status(update, context):
     if count == 0:
         currentTime = get_readable_time(time() - botStartTime)
         free = get_readable_file_size(disk_usage(DOWNLOAD_DIR).free)
-        message = '⇛ भाइयों और बहनों बोट फ्री है !\n⇛ ✧✦✧✦✧✦✧✦✧✦✧✦✧✦✧'
+        message = '⇛ Bot Made By @AM_ROBOTS !\n⇛ ✧✦✧✦✧✦✧✦✧✦✧✦✧✦✧'
         message += f"\n<b>⇛ Cpu •</b> {cpu_percent()}% | <b>⇛ Free •</b> {free}" \
                    f"\n<b>⇛ Ram •</b> {virtual_memory().percent}% | <b>⇛ Uptime •</b> {currentTime}"
         reply_message = sendMessage(message, context.bot, update.message)

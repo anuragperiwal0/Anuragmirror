@@ -195,8 +195,8 @@ def _clone(message, bot):
                         msg = f"<b>⇛ Name • </b><{NAME_FONT}>{escape(name)}</{NAME_FONT}>\n"
                     else:
                         msg = f"<b>Name: </b><{NAME_FONT}>{escape(name)}</{NAME_FONT}>\n"
-                    botpm = f"\n<b>🌺 है {tag} आपका क्लोन्ड कंप्लीट</b>\n"
-                    botpm += f"<b>\n💍 प्यार उससे करो जो आपको प्यार करता है</b>\n"
+                    botpm = f"\n<b>🌺 है {tag} Your File Is Ready</b>\n"
+                    botpm += f"<b>\n💍 Vist Again For Leeching</b>\n"
                     buttons = ButtonMaker()
                     b_uname = bot.get_me().username
                     botstart = f"http://t.me/{b_uname}"
@@ -281,9 +281,9 @@ def _clone(message, bot):
             slmsg += f"╰ Added by: {tag} | <code>{user_id}</code>\n\n"
         if LINK_LOGS:
                 try:
-                    upper = f"   ⊱✤┅┅┅●( 𝐖𝐃 𝐙𝐎𝐍𝐄 )●┅┅┅✤⊰\n"
+                    upper = f"   ⊱✤┅┅┅●( 𝓐𝓶𝓻𝓸𝓫𝓸𝓽𝓼 𝓢𝓮𝓻𝓿𝓮𝓻 𓊇 )●┅┅┅✤⊰\n"
                     source_link = f"<code>{message_args[1]}</code>\n"
-                    lower = f"   ⊱✤┅┅┅●( 𝐖𝐃 𝐙𝐎𝐍𝐄 )●┅┅┅✤⊰\n"
+                    lower = f"   ⊱✤┅┅┅●( 𝓐𝓶𝓻𝓸𝓫𝓸𝓽𝓼 𝓢𝓮𝓻𝓿𝓮𝓻 𓊇 )●┅┅┅✤⊰\n"
                     for link_log in LINK_LOGS:
                         bot.sendMessage(link_log, text=slmsg + upper + source_link + lower, parse_mode=ParseMode.HTML )
                 except IndexError:
@@ -292,9 +292,9 @@ def _clone(message, bot):
                     try:
                         reply_text = reply_to.text
                         if is_url(reply_text):
-                            upper = f"   ⊱✤┅┅┅●( 𝐖𝐃 𝐙𝐎𝐍𝐄 )●┅┅┅✤⊰\n"
+                            upper = f"   ⊱✤┅┅┅●( 𝓐𝓶𝓻𝓸𝓫𝓸𝓽𝓼 𝓢𝓮𝓻𝓿𝓮𝓻 𓊇 )●┅┅┅✤⊰\n"
                             source_link = f"<code>{reply_text.strip()}</code>\n"
-                            lower = f"   ⊱✤┅┅┅●( 𝐖𝐃 𝐙𝐎𝐍𝐄 )●┅┅┅✤⊰\n"
+                            lower = f"   ⊱✤┅┅┅●( 𝓐𝓶𝓻𝓸𝓫𝓸𝓽𝓼 𝓢𝓮𝓻𝓿𝓮𝓻 𓊇 )●┅┅┅✤⊰\n"
                             for link_log in LINK_LOGS:
                                 bot.sendMessage(chat_id=link_log, text=slmsg + upper + source_link + lower, parse_mode=ParseMode.HTML )
                     except TypeError:

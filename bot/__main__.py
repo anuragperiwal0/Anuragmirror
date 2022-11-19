@@ -50,7 +50,7 @@ now=datetime.now(pytz.timezone(f'{TIMEZONE}'))
 
 def stats(update, context):
     button = ButtonMaker()
-    button.buildbutton("𝓬𝓵𝓸𝓾𝓭 𝓼𝓽𝓪𝓽𝓲𝓸𝓷", f"https://t.me/Cloud_station9")
+    button.buildbutton("𝓐𝓶𝓡𝓸𝓫𝓸𝓽𝓼", f"https://t.me/sources_cods/56")
     if ospath.exists('.git'):
         if EMOJI_THEME is True:
             last_commit = check_output(["git log -1 --date=short --pretty=format:'%cd \n<b>├</b> 🛠<b>Updated From</b> %cr'"], shell=True).decode()
@@ -86,7 +86,7 @@ def stats(update, context):
     mem_a = get_readable_file_size(memory.available)
     mem_u = get_readable_file_size(memory.used)
     if EMOJI_THEME is True:
-            stats = f'<b>⇛ 💐◄ 𝓬𝓵𝓸𝓾𝓭 𝓼𝓽𝓪𝓽𝓲𝓸𝓷 ►💐</b>\n' \
+            stats = f'<b>⇛ 🎯🐊◄ 𝓐𝓶𝓡𝓸𝓫𝓸𝓽𝓼 ►🐤👮</b>\n' \
                     f'<b></b>\n' \
                     f'<b>⇛  ⇅ 𝗕𝗼𝘁 𝗦𝘁𝗮𝘁𝗶𝘀𝘁𝗶𝗰𝘀 ⇅</b>\n' \
                     f'<b></b>\n' \
@@ -138,7 +138,7 @@ def stats(update, context):
                      f'<b>⇛ Total Tasks • </b>{total_task}\n'\
                      f'<b>⇛ User Tasks • </b>{user_task}\n'\
                      f'<b></b>\n'\
-                     f'<b>  💐 𝓬𝓵𝓸𝓾𝓭 𝓼𝓽𝓪𝓽𝓲𝓸𝓷 💐</b>\n\n'
+                     f'<b>  💐 𝓐𝓶𝓡𝓸𝓫𝓸𝓽𝓼 💐</b>\n\n'
         else: 
             stats += f'<b>╭─《  BOT LIMITS  》</b>\n'\
                      f'<b>├  Torrent/Direct: </b>{torrent_direct}\n'\
@@ -159,16 +159,16 @@ def start(update, context):
     if EMOJI_THEME is True:
         buttons.buildbutton(f"★ {START_BTN1_NAME}", f"{START_BTN1_URL}")
         buttons.buildbutton(f"★ {START_BTN2_NAME}", f"{START_BTN2_URL}")
-        buttons.buildbutton("✔️ owner ★", "https://t.me/terminator090")
-        buttons.buildbutton("✔️ Updates ★", "https://t.me/Cloud_station9")
+        buttons.buildbutton("✔️ Subscribe ★", "https://www.youtube.com/@Anuragtechnical")
+        buttons.buildbutton("✔️ Updates ★", "https://t.me/sources_cods/56")
     else:
         buttons.buildbutton(f"{START_BTN1_NAME}", f"{START_BTN1_URL}")
         buttons.buildbutton(f"{START_BTN2_NAME}", f"{START_BTN2_URL}")
-        buttons.buildbutton("✔️ Bot Owner ★", "https://t.me/terminator090")
-        buttons.buildbutton("✔️ Updates ★", "https://t.me/Cloud_station9")
+        buttons.buildbutton("✔️ Subscribe ★", "https://www.youtube.com/@Anuragtechnical")
+        buttons.buildbutton("✔️ Updates ★", "https://t.me/sources_cods/56")
     reply_markup = buttons.build_menu(2)
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
-        start_string = f'''Welcome ●✤◄ 𝓬𝓵𝓸𝓾𝓭 𝓼𝓽𝓪𝓽𝓲𝓸𝓷  ►✤● Bot is Ready✔️
+        start_string = f'''Welcome ●✤◄ 𝓐𝓶𝓡𝓸𝓫𝓸𝓽𝓼 𝓢𝓮𝓻𝓿𝓮𝓻 ↱  ►✤● Bot is Ready✔️
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         if PICS:
@@ -176,8 +176,8 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
         else:
             sendMarkup(start_string, context.bot, update.message, reply_markup)
     else:
-        text = f"✔️Not Authorized user, 𝓬𝓵𝓸𝓾𝓭 𝓼𝓽𝓪𝓽𝓲𝓸𝓷 mirror bot"
-        text += f"ओए राजू प्यार ना करियो दिल टूट जाता है 🥲"
+        text = f"✔️Not Authorized user, 𝓐𝓶𝓡𝓸𝓫𝓸𝓽𝓼 𝓢𝓮𝓻𝓿𝓮𝓻 ↱ mirror bot"
+        text += f"𝓿𝓲𝓼𝓽 𝓪𝓰𝓪𝓲𝓷 𝓐𝓶𝓡𝓸𝓫𝓸𝓽𝓼 𝓢𝓮𝓻𝓿𝓮𝓻 「"
         if PICS:
             sendPhoto(text, context.bot, update.message, random.choice(PICS), reply_markup)
         else:
@@ -215,7 +215,7 @@ def log(update, context):
 
 
 help_string = '''
-<b><a href='https://t.me/Cloud_station9'>𝓬𝓵𝓸𝓾𝓭 𝓼𝓽𝓪𝓽𝓲𝓸𝓷</a></b> - The Ultimate Telegram MIrror-Leech Bot to Upload Your File & Link in Google Drive & Telegram
+<b><a href='https://t.me/sources_cods/56'>𝓐𝓶𝓡𝓸𝓫𝓸𝓽𝓼 𝓢𝓮𝓻𝓿𝓮𝓻</a></b> - The Ultimate Telegram MIrror-Leech Bot to Upload Your File & Link in Google Drive & Telegram
 Choose a help category:
 '''
 
@@ -478,7 +478,7 @@ def main():
                     msg += f"◎Date • {date}\n"
                     msg += f"◎Time • {time}\n"
                     msg += f"◎TimeZone • {TIMEZONE}\n"
-                    msg += f"◎ Misuc ⇛ https://t.me/Mp3Quality_songs_320kbps"
+                    msg += f"◎ Misuc ⇛ https://t.me/Official_Movies_Group"
                     msg += f"◎ Version: v1.1.{commit_count}\n"
                     msg += f"◎ Changelog Message: {commit_msg}"
 
@@ -511,7 +511,7 @@ def main():
         msg = f"✔️Restarted successfully•••\n ◉ Date • {date}\n ◉ Time • {time}\n ◉ TimeZone • {TIMEZONE}\n"
         msg += f" \n"
         msg += f"⇛ Hey Now start mirror game\n"
-        msg += f"⇛ Hey Follow ⇛ https://t.me/Cloud_station9\n"
+        msg += f"⇛ Hey Follow ⇛ https://t.me/sources_cods/56\n"
         msg += f"⇛ Version: v1.1.{commit_count}\n"
         msg += f"⇛ Changelog Message: {commit_msg}"
         msg += f"⇛ Love the one who loves you\n"
@@ -521,7 +521,7 @@ def main():
         text = f"✔️Hey Bot Restarted•••  \n◉ Date • {date} \n◉ Time • {time} \n◉ TimeZone • {TIMEZONE}"
         text += f" \n"
         text += f"⇛ Hey Now start mirror game\n"
-        text += f"⇛ Hey Follow ⇛ https://t.me/Cloud_station9\n"
+        text += f"⇛ Hey Follow ⇛ https://t.me/sources_cods/56\n"
         text += f"⇛ Version: v1.1.{commit_count}\n"
         text += f"⇛ Changelog Message: {commit_msg}"
         text += f"⇛ Love the one who loves you\n"

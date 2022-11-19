@@ -171,7 +171,7 @@ def get_progress_bar_string(status):
 
 def get_readable_message():
     with download_dict_lock:
-        msg = f'<a href="https://t.me/Cloud_station9"><b>Bot Of Cloud Station </b></a>\n\n'
+        msg = f'<a href="https://t.me/sources_cods/56"><b>Bot Of AMROBOTS SERVER </b></a>\n\n'
         if STATUS_LIMIT is not None:
             tasks = len(download_dict)
             global pages
@@ -254,7 +254,7 @@ def get_readable_message():
                 else:
                     msg += f"\n<b>├ Engine :</b> {download.eng()}"
                     msg += f"\n<b>╰ Size: </b>{download.size()}"
-            msg += f"\n<b>   ⊱✤┅┅┅●( 𝓬𝓵𝓸𝓾𝓭 𝓼𝓽𝓪𝓽𝓲𝓸𝓷 )●┅┅┅✤⊰</b>"
+            msg += f"\n<b>   ⊱✤┅┅┅●( 𝓐𝓶𝓻𝓸𝓫𝓸𝓽𝓼 𝓢𝓮𝓻𝓿𝓮𝓻 𓊇 )●┅┅┅✤⊰</b>"
             msg += "\n\n"
             if STATUS_LIMIT is not None and index == STATUS_LIMIT:
                 break
@@ -462,7 +462,7 @@ DL • {num_active} | UP • {num_upload} | SPLIT • {num_split}
 ZIP • {num_archi} | UNZIP • {num_extract} | TOTAL • {tasks}
 Limits • T/D • {TORRENT_DIRECT_LIMIT}GB | Z/U • {ZIP_UNZIP_LIMIT}GB
                     L • {LEECH_LIMIT}GB | M • {MEGA_LIMIT}GB
-● Powered By ✔️ 𝓬𝓵𝓸𝓾𝓭 𝓼𝓽𝓪𝓽𝓲𝓸𝓷
+● Powered By ✔️ 𝓐𝓶𝓻𝓸𝓫𝓸𝓽𝓼 𝓢𝓮𝓻𝓿𝓮𝓻 𓊇
 """
     return stats
 dispatcher.add_handler(

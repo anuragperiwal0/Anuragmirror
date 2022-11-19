@@ -88,18 +88,16 @@ def stats(update, context):
     if EMOJI_THEME is True:
             stats = f'<b>⇛ 🎯🐊◄ 𝓐𝓶𝓡𝓸𝓫𝓸𝓽𝓼 ►🐤👮</b>\n' \
                     f'<b></b>\n' \
-                    f'<b>⇛  ⇅ 𝗕𝗼𝘁 𝗦𝘁𝗮𝘁𝗶𝘀𝘁𝗶𝗰𝘀 ⇅</b>\n' \
+                    f'<b>⇛《🌐 BOT STATISTICS 🌐》</b>\n' \
                     f'<b></b>\n' \
-                    f'<b>⇛ Last Updated • </b>{last_commit}\n'\
-                    f'<b>⇛ Uptime• </b>{currentTime}\n'\
-                    f'<b>⇛ Platform: </b>{plat_str}\n\n'\
-                    f'<b>⇛ OS Uptime• </b>{osUptime}\n'\
-                    f'<b>⇛ Cpu •</b> [{progress_bar(cpuUsage)}] {cpuUsage}%\n'\
-                    f'<b>⇛ Ram •</b> [{progress_bar(mem_p)}] {mem_p}%\n'\
-                    f'<b>⇛ Disk •</b> [{progress_bar(disk)}] {disk}%\n'\
-                    f'<b>⇛ Disk Free •</b> {free}\n'\
-                    f'<b>⇛ ⇑ Upload File •</b> {sent}\n'\
-                    f'<b>⇛ ⇓ Download File •</b> {recv}\n'\
+                    f'<b>⇛ 🛠 Updated On: </b>{last_commit}\n'\
+                    f'<b>⇛ ⌛ Uptime: </b>{currentTime}\n'\
+                    f'<b>⇛ 🖥️ CPU:</b> [{progress_bar(cpuUsage)}] {cpuUsage}%\n'\
+                    f'<b>⇛ 🎮 RAM:</b> [{progress_bar(mem_p)}] {mem_p}%\n'\
+                    f'<b>⇛ 💾 Disk:</b> [{progress_bar(disk)}] {disk}%\n'\
+                    f'<b>⇛ 💿 Disk Free:</b> {free}\n'\
+                    f'<b>⇛ ⇑🔺 Upload Data:</b> {sent}\n'\
+                    f'<b>⇛ ⇓🔻 Download Data:</b> {recv}\n'\
                     f'<b></b>\n'\
                     f'<b>⚽️—●—●—●—⚽️—●—●—●—⚽️</b>\n\n'
 
@@ -129,14 +127,14 @@ def stats(update, context):
         user_task = 'No Limit Set' if USER_TASKS_LIMIT is None else f'{USER_TASKS_LIMIT} Tasks/user'
 
         if EMOJI_THEME is True: 
-            stats += f'<b>⇛ ║🔆  Bot Limits 🔆║</b>\n'\
-                     f'<b>⇛ Torrent/Direct • </b>{torrent_direct}\n'\
-                     f'<b>⇛ Zip/Unzip • </b>{zip_unzip}\n'\
-                     f'<b>⇛ Leech • </b>{leech_limit}\n'\
-                     f'<b>⇛ Clone • </b>{clone_limit}\n'\
-                     f'<b>⇛ Mega • </b>{mega_limit}\n'\
-                     f'<b>⇛ Total Tasks • </b>{total_task}\n'\
-                     f'<b>⇛ User Tasks • </b>{user_task}\n'\
+            stats += f'<b>⇛《 ⚠️ BOT LIMITS ⚠️ 》</b>\n'\
+                     f'<b>⇛ 🧲 Torrent/Direct: </b>{torrent_direct}\n'\
+                     f'<b>⇛ 🔐 Zip/Unzip: </b>{zip_unzip}\n'\
+                     f'<b>⇛ 🔷 Leech: </b>{leech_limit}\n'\
+                     f'<b>⇛ ♻️ Clone: </b>{clone_limit}\n'\
+                     f'<b>⇛ 🔰 Mega: </b>{mega_limit}\n'\
+                     f'<b>⇛ 💣 Total Tasks: </b>{total_task}\n'\
+                     f'<b>⇛ 🔫 User Tasks: </b>{user_task}\n'\
                      f'<b></b>\n'\
                      f'<b>  💐 𝓐𝓶𝓡𝓸𝓫𝓸𝓽𝓼 💐</b>\n\n'
         else: 
@@ -349,8 +347,8 @@ except Exception as err:
 def bot_help(update, context):
     button = ButtonMaker()
     if EMOJI_THEME is True:
-        button.buildbutton("✔️ User", f"https://graph.org/{help_user}")
-        button.buildbutton("✔️ Owner", f"https://graph.org/{help_admin}")
+        button.buildbutton("👤 User", f"https://graph.org/{help_user}")
+        button.buildbutton("🛡️ Owner", f"https://graph.org/{help_admin}")
     else:
         button.buildbutton("User", f"https://graph.org/{help_user}")
         button.buildbutton("Owner", f"https://graph.org/{help_admin}")
